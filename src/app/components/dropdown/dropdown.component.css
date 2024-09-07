@@ -1,0 +1,64 @@
+/* Dropdown container */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+  }
+  
+  /* Dropdown button */
+  .dropdown-btn {
+    background-color: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    color: black;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Arrow icon styling */
+  .dropdown-btn span {
+    transition: transform 0.3s;
+  }
+  
+  .dropdown-btn span.open {
+    transform: rotate(180deg); /* Rotate arrow when dropdown is open */
+  }
+  
+  /* Dropdown menu styling */
+  .dropdown-menu {
+    position: absolute;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+    margin-top: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    list-style-type: none;
+    padding: 0;
+    max-height: 150px;
+    overflow-y: auto; /* Scroll if options exceed the height */
+  }
+  
+  /* Dropdown item styling */
+  .dropdown-item {
+    padding: 10px;
+    cursor: pointer;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .dropdown-item:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .dropdown-item:last-child {
+    border-bottom: none;
+  }
+  

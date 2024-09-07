@@ -1,0 +1,14 @@
+.container {
+    display: flex;
+    width: 100vw;
+    height: 90vh;
+}
+
+.left {
+    width: 60%;
+    height: 90vh;
+}
+.right {
+    width: 40%;
+    height: 85vh;
+}
